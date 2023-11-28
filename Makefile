@@ -23,11 +23,6 @@ build: clean
 	go build -o ./bin/${BIN_FILENAME} ./cmd
 
 
-.PHONY: change_permission
-change_permission:
-	chmod +x ./bin/${BIN_FILENAME}
-
-
 .PHONY: execute
 execute: clean build
 	./bin/${BIN_FILENAME}
